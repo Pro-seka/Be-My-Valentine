@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>Will You Be My Valentine? ❤️</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Nunito:wght@300;400;600;700&family=Dancing+Script:wght@700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>❤️</text></svg>">
+</head>
+<body>
+    <!-- Background Hearts -->
+    <div class="background-hearts"></div>
+    
+    <!-- Main Container - Perfectly Centered -->
+    <main class="container">
+        <!-- Main Question Card -->
+        <div class="main-card" id="mainCard">
+            <!-- Decorative Top -->
+            <div class="card-top-decoration">
+                <div class="decoration-line"></div>
+                <div class="decoration-heart">❤️</div>
+                <div class="decoration-line"></div>
+            </div>
+            
+            <!-- Question -->
+            <div class="question-section">
+                <h1 class="question-title">
+                    <span class="title-line-1">Will You Be</span>
+                    <span class="title-line-2">My Valentine?</span>
+                </h1>
+                <p class="question-subtitle">
+                    This could be the start of something beautiful...
+                </p>
+            </div>
+            
+            <!-- Interactive Buttons Section -->
+            <div class="buttons-section">
+                <div class="buttons-container">
+                    <!-- YES Button -->
+                    <button class="btn-yes" id="yesBtn">
+                        <span class="btn-content">
+                            <span class="btn-icon">💖</span>
+                            <span class="btn-text">Yes</span>
+                            <span class="btn-sparkle">✨</span>
+                        </span>
+                    </button>
+                    
+                    <!-- NO Button (Intelligent Escape) -->
+                    <div class="no-button-wrapper">
+                        <button class="btn-no" id="noBtn">
+                            <span class="btn-content">
+                                <span class="btn-icon">❌</span>
+                                <span class="btn-text">No</span>
+                            </span>
+                        </button>
+                        <div class="escape-trail"></div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Escape Messages -->
+            <div class="escape-messages-container" id="escapeMessages">
+                <!-- Messages will appear here -->
+            </div>
+            
+            <!-- Card Footer -->
+            <div class="card-footer">
+                <div class="footer-content">
+                    <i class="fas fa-heart"></i>
+                    <span>Made with ❤️ by Sakib</span>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Follow-up Questions (Hidden Initially) -->
+        <div class="followup-card" id="followupCard">
+            <div class="card-top-decoration">
+                <div class="decoration-line"></div>
+                <div class="decoration-heart">💕</div>
+                <div class="decoration-line"></div>
+            </div>
+            
+            <div class="question-section">
+                <h2 class="followup-title">
+                    <span class="title-line-1">Are You</span>
+                    <span class="title-line-2">Sure About That?</span>
+                </h2>
+                <p class="question-subtitle">
+                    I really think we'd make a perfect pair...
+                </p>
+            </div>
+            
+            <div class="buttons-section">
+                <div class="buttons-container followup">
+                    <button class="btn-yes confirm" id="yesConfirmBtn">
+                        <span class="btn-content">
+                            <span class="btn-icon">💘</span>
+                            <span class="btn-text">Yes, I'm Sure!</span>
+                        </span>
+                    </button>
+                    
+                    <button class="btn-no secondary" id="noConfirmBtn">
+                        <span class="btn-content">
+                            <span class="btn-icon">🤔</span>
+                            <span class="btn-text">No</span>
+                        </span>
+                    </button>
+                </div>
+            </div>
+            
+            <div class="card-footer">
+                <div class="footer-content">
+                    <i class="fas fa-star"></i>
+                    <span>This could be magical...</span>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Final Confirmation (Hidden Initially) -->
+        <div class="final-card" id="finalCard">
+            <div class="card-top-decoration">
+                <div class="decoration-line"></div>
+                <div class="decoration-heart">💝</div>
+                <div class="decoration-line"></div>
+            </div>
+            
+            <div class="question-section">
+                <h2 class="final-title">
+                    <span class="title-line-1">One last moment…</span>
+                    <span class="title-line-2">are you sure? 🤍</span>
+                </h2>
+                <p class="question-subtitle">
+                    This moment feels special 🤍
+                </p>
+                
+                <div class="dramatic-timer">
+                    <div class="timer-circle">
+                        <svg class="timer-svg" viewBox="0 0 100 100">
+                            <circle class="timer-bg" cx="50" cy="50" r="45"></circle>
+                            <circle class="timer-fill" cx="50" cy="50" r="45"></circle>
+                        </svg>
+                        <div class="timer-count">10</div>
+                    </div>
+                    <div class="timer-label">Take your time…</div>
+                </div>
+            </div>
+            
+            <div class="buttons-section">
+                <div class="buttons-container final">
+                    <button class="btn-yes ultimate" id="yesFinalBtn">
+                        <span class="btn-content">
+                            <span class="btn-icon">✨🥰✨</span>
+                            <span class="btn-text">YES!</span>
+                            <span class="btn-glow"></span>
+                        </span>
+                    </button>
+                    
+                    <button class="btn-no fragile" id="noFinalBtn">
+                        <span class="btn-content">
+                            <span class="btn-icon">😢</span>
+                            <span class="btn-text">No</span>
+                        </span>
+                    </button>
+                </div>
+            </div>
+            
+            <div class="card-footer">
+                <div class="footer-content">
+                    <i class="fas fa-gem"></i>
+                    <span>Making the right choice...</span>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Success Celebration (Hidden Initially) -->
+        <div class="success-card" id="successCard">
+            <div class="celebration-overlay"></div>
+            
+            <div class="success-content">
+                <h1 class="success-title">
+                    <span class="title-line-1">I Knew It!</span>
+                    <span class="title-line-2">❤️😌</span>
+                </h1>
+                
+                <p class="success-message">
+                    I'm really happy right now 🤍<br>Thank you for this moment.
+                </p>
+                
+                <div class="share-section">
+                    <div class="share-box">
+                        "I said YES… and I'm so happy it's you ❤️"
+                        <div class="share-credit">- Created by Sakib</div>
+                    </div>
+                </div>
+                
+                <button class="btn-restart" id="restartBtn">
+                    <span class="btn-content">
+                        <span class="btn-icon">🔄</span>
+                        <span class="btn-text">Experience again?</span>
+                    </span>
+                </button>
+            </div>
+            
+            <!-- Confetti Effect -->
+            <div class="confetti-container"></div>
+        </div>
+        
+        <!-- Exit Message (Hidden Initially) -->
+        <div class="exit-card" id="exitCard">
+            <div class="card-top-decoration">
+                <div class="decoration-line"></div>
+                <div class="decoration-heart">🌸</div>
+                <div class="decoration-line"></div>
+            </div>
+            
+            <div class="question-section">
+                <h2 class="exit-title">
+                    <span class="title-line-1">No Worries</span>
+                    <span class="title-line-2">Have a Beautiful Day!</span>
+                </h2>
+                
+                <div class="exit-message">
+                    <p>This was made just for you…</p>
+                    <p class="important-note">
+                        because real feelings deserve to be shared 💕
+                    </p>
+                    <p>Wishing you love and happiness always!</p>
+                </div>
+            </div>
+            
+            <div class="buttons-section">
+                <button class="btn-return" id="returnBtn">
+                    <span class="btn-content">
+                        <span class="btn-icon">↩️</span>
+                        <span class="btn-text">Back to Question</span>
+                    </span>
+                </button>
+            </div>
+            
+            <div class="card-footer">
+                <div class="footer-content">
+                    <i class="fas fa-peace"></i>
+                    <span>With kindness, Sakib</span>
+                </div>
+            </div>
+        </div>
+    </main>
+    
+    <!-- Watermark -->
+    <div class="watermark">By Sakib</div>
+    
+    <!-- Ethical Note -->
+    <div class="ethical-note">
+        <i class="fas fa-heart"></i>
+        <span>This was made just for you… because real feelings deserve to be shared 💕</span>
+    </div>
+    
+    <!-- Sound Effects -->
+    <div id="audioElements"></div>
+    
+    <script src="script.js"></script>
+</body>
+</html>
