@@ -1,8 +1,3 @@
-// ============================================
-// PERFECT VALENTINE INTERACTION
-// WITH UNIVERSAL AUDIO SUPPORT
-// ============================================
-
 class PerfectValentine {
     constructor() {
         // App State
@@ -940,7 +935,7 @@ class PerfectValentine {
             
             // Add pulse animation when time is running out
             if (this.state.timerValue <= 3) {
-                timerCount.style.animation = 'pulse 1s infinite';
+                //timerCount.style.animation = 'pulse 1s infinite';
                 timerCount.style.color = '#ff4d6d';
             } else {
                 timerCount.style.animation = '';
@@ -1322,3 +1317,4 @@ function setVH() {
 setVH();
 window.addEventListener('resize', setVH);
 window.addEventListener('orientationchange', setVH);
+
